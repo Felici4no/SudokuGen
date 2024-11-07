@@ -1,9 +1,10 @@
 import random
 
-line_a,line,line_b,line_c = [1,2,3,7,8,9,4,5,6],[],[],[]
+line_a = [1,2,3,7,8,9,4,5,6]
 
 key = []
 def create_line(line_a):
+    line, line_b, line_c = [],[],[]
     line.append(line_a)
     #line 2
     for i in range(6,9):
@@ -45,7 +46,11 @@ def create_collum(master_key):
     for x in range(len(key)):
         lista_2.append(master_key[key[x]])
     print(lista_2)
+    return lista_2
 
 quadrado2 = create_collum(master_key)
+linha2 = create_line(quadrado2)
+
 
 print(linhas)
+print(linha2)
