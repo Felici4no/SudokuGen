@@ -39,18 +39,39 @@ def tira_quadrado(linhas):
 
 
 master_key = tira_quadrado(linhas)
-print(master_key)
+
 def create_collum(master_key):
     lista_2 = []
     key = [2,0,1,5,3,4,8,6,7]
     for x in range(len(key)):
         lista_2.append(master_key[key[x]])
-    print(lista_2)
     return lista_2
+
+
+
 
 quadrado2 = create_collum(master_key)
 linha2 = create_line(quadrado2)
 
+aux = linha2[1]
+linha2[1] = linha2[2]
+linha2[2] = aux
 
-print(linhas)
-print(linha2)
+quadrado3 = create_collum(quadrado2)
+
+
+#quadrado3 = tira_quadrado(quadrado3[0])
+
+linha3 = create_line(quadrado3)
+
+aux = linha3[1]
+linha3[1] = linha3[2]
+linha3[2] = aux
+
+#erro na segunda linha da segunda coluna
+
+
+print('A B C',linhas)
+print('D E F',linha2)
+
+print('G H I',linha3)
