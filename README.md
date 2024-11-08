@@ -45,10 +45,6 @@ O código ao final do script gera o tabuleiro formatado e exibe no console com a
 
 Execute o código em um ambiente Python 3 para gerar e visualizar o tabuleiro formatado. 
 
-```bash
-python tabuleiro.py
-```
-
 ## Requisitos
 
 - Python 3.x
